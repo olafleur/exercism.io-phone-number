@@ -37,7 +37,6 @@ class PhoneNumberSpecs extends FlatSpec with Matchers {
   }
 
   it should "format full us phone numbers" in {
-    pending
     val number = new PhoneNumber("11234567890")
     number.toString should be ("(123) 456-7890")
   }
