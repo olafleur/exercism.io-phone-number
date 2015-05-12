@@ -1,5 +1,5 @@
 class PhoneNumber(s: String) {
-  def areaCode = ""
+  def areaCode = number.substring(0, 3)
 
   def number = {
     val chiffres = s filter ("0123456789" contains _)
