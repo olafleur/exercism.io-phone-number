@@ -18,4 +18,12 @@ class PhoneNumber(s: String) {
     }
   }
 
+  override def toString = {
+    s"($areaCode) $region-$rest"
+  }
+
+  private def region = number.substring(3, 6)
+
+  private def rest = number.substring(6)
+
 }
