@@ -17,7 +17,6 @@ class PhoneNumberSpecs extends FlatSpec with Matchers {
   }
 
   it should "be invalid when 11 digits" in {
-    pending
     val number = new PhoneNumber("21234567890").number
     number should be ("0000000000")
   }

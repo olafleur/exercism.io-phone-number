@@ -7,7 +7,7 @@ class PhoneNumber(s: String) {
       if(chiffres{0} == '1') {
         chiffres.drop(1)
       } else {
-        throw new NotImplementedError()
+        "0000000000"
       }
     } else {
       chiffres
