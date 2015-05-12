@@ -7,7 +7,6 @@ class PhoneNumberSpecs extends FlatSpec with Matchers {
   }
 
   it should "clean numbers with dots" in {
-    pending
     val number = new PhoneNumber("123.456.7890").number
     number should be ("1234567890")
   }
