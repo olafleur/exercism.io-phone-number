@@ -1,6 +1,6 @@
 class PhoneNumber(s: String) {
   def areaCode = ""
 
-  def number = ""
+  def number = s filter ("0123456789" contains _)
 
 }
